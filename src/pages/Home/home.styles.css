@@ -1,0 +1,240 @@
+.square {
+  height: 100px;
+  width: 100px;
+
+  margin: 0 auto;
+  -webkit-animation: square 0.6s ease-in-out both;
+  animation: square 0.6s ease-in-out both;
+  animation-iteration-count: 16;
+  /* -webkit-animation-name: exampleTrans; /* Safari 4.0 - 8.0 */
+  /* -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+  /*animation-name: exampleTrans;
+  animation-duration: 8s; */
+}
+/**
+ * ----------------------------------------
+ * animation rotate-center
+ * ----------------------------------------
+ */
+@keyframes square {
+  from {
+    transform: rotate(0deg);
+    background-color: #58ffd5;
+  }
+  to {
+    transform: rotate(360deg);
+    background-color: #7ddaff;
+  }
+}
+
+.typewriter {
+  padding: 10px 0;
+  display: inline-block;
+  margin: 0 auto;
+  font-family: "Courier";
+}
+
+.typewriter h1 {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.typewriter p {
+  border-right: 0.15em solid orange;
+  font-family: "Courier";
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: left;
+}
+
+.typewriter p:nth-child(2) {
+  width: 25.5em;
+  opacity: 0;
+  -webkit-animation: type2 3s steps(60, end);
+  animation: type2 3s steps(60, end);
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.typewriter p:nth-child(3) {
+  width: 17.3em;
+  opacity: 0;
+  -webkit-animation: type3 3s steps(40, end),
+    blink 0.5s step-end infinite alternate;
+  animation: type3 3s steps(40, end), blink 0.5s step-end infinite alternate;
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 0.15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 0.15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
+
+/* Safari 4.0 - 8.0 */
+/*
+@-webkit-keyframes exampleTrans {
+  0% {
+    background-color: #9400d3;
+  }
+  10% {
+    background-color: #4b0082;
+  }
+  20% {
+    background-color: #0000ff;
+  }
+  30% {
+    background-color: #00ff00;
+  }
+  40% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: #ff7f00;
+  }
+  60% {
+    background-color: #ff0000;
+  }
+  70% {
+    background-color: #9400d3;
+  }
+  80% {
+    background-color: #4b0082;
+  }
+  90% {
+    background-color: #0000ff;
+  }
+  100% {
+    background-color: #00ff00;
+  }
+}
+*/
+/* Standard syntax */
+/*
+@keyframes exampleTrans {
+  0% {
+    background-color: #9400d3;
+  }
+  10% {
+    background-color: #4b0082;
+  }
+  20% {
+    background-color: #0000ff;
+  }
+  30% {
+    background-color: #00ff00;
+  }
+  40% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: #ff7f00;
+  }
+  60% {
+    background-color: #ff0000;
+  }
+  70% {
+    background-color: #9400d3;
+  }
+  80% {
+    background-color: #4b0082;
+  }
+  90% {
+    background-color: #0000ff;
+  }
+  100% {
+    background-color: #00ff00;
+  }
+}
+*/
