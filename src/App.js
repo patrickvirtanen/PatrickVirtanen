@@ -13,7 +13,11 @@ class App extends React.Component {
       // Put <Links /> under BrowserRouter
       <BrowserRouter>
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route
+            exact
+            path="https://patrickvirtanen.github.io/site-try/"
+            component={Home}
+          />
           <Route path="/Portfolio" component={Portfolio} />
           <Route component={Error} />
         </Switch>
