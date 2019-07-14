@@ -3,9 +3,9 @@
   width: 100px;
 
   margin: 0 auto;
-  -webkit-animation: square 0.6s ease-in-out both;
-  animation: square 0.6s ease-in-out both;
-  animation-iteration-count: 16;
+  -webkit-animation: square 0.6s ease-in-out both infinite;
+  animation: square 0.6s ease-in-out both infinite;
+  /*animation-iteration-count: 16;
   /* -webkit-animation-name: exampleTrans; /* Safari 4.0 - 8.0 */
   /* -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
   /*animation-name: exampleTrans;
