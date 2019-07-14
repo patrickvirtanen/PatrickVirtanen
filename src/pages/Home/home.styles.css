@@ -1,6 +1,6 @@
 .square {
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
 
   margin: 0 auto;
   -webkit-animation: square 0.6s ease-in-out both infinite;
