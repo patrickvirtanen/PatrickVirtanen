@@ -11,17 +11,16 @@ class App extends React.Component {
     return (
       // Inside here we define our routes
       // Put <Links /> under BrowserRouter
+      <Home />
+      /*
       <BrowserRouter>
         <Switch>
-          <Route
-            exact
-            path="https://patrickvirtanen.github.io/site-try/"
-            component={Home}
-          />
+          <Route exact path="https://patrickvirtanen.github.io/site-try/" component={Home} />
           <Route path="/Portfolio" component={Portfolio} />
           <Route component={Error} />
         </Switch>
       </BrowserRouter>
+      */
     );
   }
 }
